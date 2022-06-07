@@ -210,10 +210,37 @@ img {
     transition: transform 0.3s ease-in-out;
 }
 
+
 .listado__elemento:hover {
     transform: scale(1.1);
 }
 
+.listado__elemento--2col {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .listado__elemento--2col {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+.listado__numero {
+    color: var(--primario);
+    font-size: 6rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+@media (min-width: 768px){
+    .listado__numero{
+        font-size: 4rem;
+        flex-basis: 20rem;
+    }
+}
 .listado__encabezado {
     font-size: 3rem;
     color: var(--primario);
@@ -267,4 +294,34 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
     align-items: center;
+}
+
+
+/* comisiones */
+
+@media (min-width: 768px) {
+    .comisiones__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: flex-end;
+    }
+}
+@media (min-width: 998px){
+    .comisiones__grid {
+        align-items: center;
+
+    }
+}
+
+.comisiones__texto {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .comisiones__texto {
+        text-align: left;
+    }
 }
