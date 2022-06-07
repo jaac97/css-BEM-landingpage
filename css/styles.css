@@ -156,7 +156,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
 
 }
 
@@ -164,11 +163,17 @@ img {
     .navegacion {
         flex-direction: row;
         align-items: flex-start;
+        gap: 2rem;
+
     }
 }
 
 .navegaccion__enlace {
     color: var(--primario);
+}
+
+.navegacion__enlace--footer {
+    color: var(--blanco);
 }
 
 @media (min-width: 768px) {
@@ -228,6 +233,7 @@ img {
         gap: 2rem;
     }
 }
+
 .listado__numero {
     color: var(--primario);
     font-size: 6rem;
@@ -235,12 +241,14 @@ img {
     text-align: center;
     margin: 0;
 }
-@media (min-width: 768px){
-    .listado__numero{
+
+@media (min-width: 768px) {
+    .listado__numero {
         font-size: 4rem;
         flex-basis: 20rem;
     }
 }
+
 .listado__encabezado {
     font-size: 3rem;
     color: var(--primario);
@@ -307,7 +315,8 @@ img {
         align-items: flex-end;
     }
 }
-@media (min-width: 998px){
+
+@media (min-width: 998px) {
     .comisiones__grid {
         align-items: center;
 
@@ -323,5 +332,81 @@ img {
 @media (min-width: 768px) {
     .comisiones__texto {
         text-align: left;
+    }
+}
+
+/* testimonial */
+.testimoniales {
+    background: var(--primario);
+    padding: 5rem 0;
+}
+
+.testimoniales__encabezado {
+    color: var(--blanco);
+}
+
+.testimoniales__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .testimoniales__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+.testimonial {
+    background-color: var(--blanco);
+    padding: 2rem;
+}
+
+.testimonial__texto {
+    position: relative;
+    padding-left: 4rem;
+}
+
+.testimonial__texto::before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/comilla.png');
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    top: 0;
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+}
+
+.testimonial__autor {
+    color: var(--primario);
+    font-weight: 700;
+    text-align: right;
+}
+
+
+.footer {
+    background-color: #5a30a0;
+    padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+    .footer__grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer__logo {
+    width: 20rem;
+    margin: 0 auto 4rem auto;
+}
+
+@media (min-width: 768px) {
+    .footer__logo {
+        margin: 0;
     }
 }
