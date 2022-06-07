@@ -1,4 +1,4 @@
-# Frontend Mentor - QR code component solution
+# Nucleus Landing Page
 
 This is a solution to the [Nucleos lading page with BEM](https://www.udemy.com/course/css-grid-y-flexbox-la-guia-definitiva-crea-10-proyectos/learn/lecture/28249672#overview). CSS La Guía Completa - Flexbox, CSS Grid, SASS +20 proyectos challenges help you improve your coding skills by building realistic projects. 
 
